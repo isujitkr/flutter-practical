@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 //import 'myfiles/login.dart';
 //import 'myfiles/addImage.dart';
-import 'myfiles/calc.dart';
-
+// import 'myfiles/calc.dart';
+import 'myfiles/imageUrl.dart';
 void main() {
-  runApp( MyApp());
+  runApp( const MyApp());
 }
 
 
