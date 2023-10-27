@@ -47,6 +47,25 @@ class MyCustomForm extends StatelessWidget{
               labelText: 'Enter your user name',
             ),
           ),
+        ),
+        Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          child: RichText(
+            text: TextSpan(
+              text: "  Examination  ",
+              style: DefaultTextStyle.of(context).style,
+              children: <TextSpan>[
+                TextSpan(
+                  text: "  DateSheet",
+                  style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)
+                ),
+                TextSpan(
+                  text: "  Declared",
+                  style: TextStyle(fontSize: 45, fontWeight: FontWeight.w900),
+                )
+              ],
+            ),
+          ),
         )
       ],
     );
