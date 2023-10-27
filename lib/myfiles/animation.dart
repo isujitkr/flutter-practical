@@ -8,7 +8,10 @@ void main(){
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              AnimCntnrWdt(),
+              //AnimCntnrWdt(),
+              Divider(thickness: 20,color: Colors.pinkAccent,indent: 15,endIndent: 15,),
+              AnimCrossFadeWdt(),
+              Divider(thickness: 20,color: Colors.amber,indent: 15,endIndent: 15,),
             ],
           ),
         ),
@@ -50,5 +53,53 @@ class _AnimCntnrWdtState extends State<AnimCntnrWdt>{
         )
       ],
     );
+  }
+}
+
+class AnimCrossFadeWdt extends StatefulWidget{
+  @override
+  _AnimCrossFadeWdtState createState() => _AnimCrossFadeWdtState();
+
+}
+
+class _AnimCrossFadeWdtState extends State<AnimCrossFadeWdt>{
+  bool _crossFadeStateToggle = true;
+  void _crossFade(){
+    setState(() {
+      _crossFadeStateToggle = _crossFadeStateToggle ? false : true;
+    });
+  }
+  @override
+  Widget build(BuildContext context){
+    return Row( children: <Widget>[
+      Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          AnimatedCrossFade(
+            firstCurve: Curves.linear,
+            secondCurve: Curves.easeOutSine,
+            duration: Duration(milliseconds: 1500),
+            crossFadeState: _crossFadeStateToggle ? CrossFadeState.showFirst :
+            CrossFadeState.showSecond,
+            firstChild: Container(
+              color: Colors.amber,
+              height: 100.0,
+              width: 300.0,
+            ),
+            secondChild: Container(
+              color: Colors.pink,height: 200.0, width: 300.0,
+            ),
+          ),
+          Positioned.fill(
+            child: ElevatedButton(
+              child: Text('Tap to \nFade color and size', style: TextStyle(fontSize: 20,),),
+              onPressed: (){
+                _crossFade();
+              },
+            ),
+          )
+        ],
+      )
+    ],);
   }
 }
