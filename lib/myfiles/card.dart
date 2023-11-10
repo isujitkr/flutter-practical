@@ -31,44 +31,86 @@ class _HomePageState extends State<HomePage>{
       body: Padding(
         padding: const EdgeInsets.all(25),
         child: Center(
-          child: Column(children: [
-            Card(
-              elevation: 8.0,
-              color: Colors.white,
-              margin: EdgeInsets.all(16.0),
-              shape: UnderlineInputBorder(borderSide: BorderSide(color: Colors.deepOrange,width: 5)),
-            ),
-            Card(
-              elevation: 8.0,
-              color: Colors.white,
-              margin: EdgeInsets.all(16.0),
-              shape: StadiumBorder(),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text(
-                    'Sujit 51',
-                        textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 48.0,
-                      color: Colors.orange,
+            child: Column(children: [
+              Card(
+                elevation: 8.0,
+                color: Colors.white,
+                margin: EdgeInsets.all(16.0),
+                shape: StadiumBorder(),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Sujit 51',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 48.0,
+                        color: Colors.orange,
+                      ),
                     ),
-                  ),
-                  Text(
-                    '2022-24 Batch',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                  Text(
-                    'BCIIT',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.pink),
-                  ),
-                ],
+                    Text('2022-24 batch',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.grey),),
+                    Text('BCIIT',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.pinkAccent),)
+                  ],
+                ),
               ),
-            )
-          ],)
+              Card(
+                elevation: 8.0,
+                color: Colors.white,
+                margin: EdgeInsets.all(16.0),
+                shape: OutlineInputBorder(),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Sujit 51',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 48.0,
+                        color: Colors.orange,
+                      ),
+                    ),
+                    Text('2022-24 batch',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.grey),),
+                    Text('BCIIT',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.pinkAccent),)
+                  ],
+                ),
+              ),
+              Card(
+                elevation: 8.0,
+                color: Colors.white,
+                margin: EdgeInsets.all(16.0),
+                shape: StarBorder(),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      'Sujit 51',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 48.0,
+                        color: Colors.orange,
+                      ),
+                    ),
+                    Text('2022-24 batch',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.grey),),
+                    Text('BCIIT',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.pinkAccent),)
+                  ],
+                ),
+              )
+            ],)
         ),
       ),
     );
