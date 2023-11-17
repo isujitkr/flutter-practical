@@ -38,11 +38,13 @@ class GridViewBuilderWidget extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Icon(
-                  _iconList[index],
-                  size: 48.0,
-                  color: Colors.indigo,
-                ),
+
+                Image.asset('images/f$index.png',width:60,height:60),
+                // Icon(
+                //   _iconList[index],
+                //   size: 48.0,
+                //   color: Colors.indigo,
+                // ),
                 Divider(),
                 Text(
                   'Index $index',
