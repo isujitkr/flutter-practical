@@ -29,16 +29,16 @@ class StackWidget extends StatelessWidget{
           height: MediaQuery.of(context).size.height,
         ),
         Positioned(
-          bottom: 10.0,
-          left: (MediaQuery.of(context).size.width/2-20),
+          bottom: 200.0,
+          left: (MediaQuery.of(context).size.width/2-150),
           child: CircleAvatar(
-            radius: 20.0,
-            backgroundImage: AssetImage('app_img_src/fo.png',),
+            radius: 150.0,
+            backgroundImage: AssetImage('app_img_src/f0.png',),
           ),
         ),
         Positioned(
-            bottom: 90.0,
-            right: 16.0,
+            bottom: 100.0,
+            right: 50.0,
             child: Text(
               'Sujit Kumar',
               style: TextStyle(
