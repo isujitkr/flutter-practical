@@ -24,19 +24,19 @@ class StackWidget extends StatelessWidget{
     return Stack(
       children: <Widget>[
         Image(
-          image: AssetImage('app_img_src/f0.png'),
+          image: const AssetImage('app_img_src/f0.png'),
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
         ),
         Positioned(
           bottom: 200.0,
           left: (MediaQuery.of(context).size.width/2-150),
-          child: CircleAvatar(
+          child: const CircleAvatar(
             radius: 150.0,
             backgroundImage: AssetImage('app_img_src/f0.png',),
           ),
         ),
-        Positioned(
+        const Positioned(
             bottom: 100.0,
             right: 50.0,
             child: Text(
